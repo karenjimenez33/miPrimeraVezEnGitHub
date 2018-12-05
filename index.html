@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,19 +11,31 @@
             margin: 0;
             border: 10px solid black;
         }
+
         img {
             max-width: 100%;
             vertical-align: top;
         }
+
+        /*media query*/
+        img#responsive {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            img#responsive {
+                display: block;
+            }
+        }
     </style>
 </head>
+
 <body>
+    <img id="responsive" src="img/invie-responsive_9eaee446-2d8d-4cfb-92e1-c4038311af4a.png" alt="" />
     <img src="img/header.JPG" alt="" />
-    <img src="img/hero_51f6ca4a-043f-4384-bf2d-0276833261fc.jpg" alt=""/>
-    <h6>Acustica</h6>
-    <img src="img/acustica_395abf3a-d46e-4f19-a9cc-ddee140e6597.jpg" alt=""/>
-    <img src="img/clasica_0663a6aa-2c83-4435-8530-357480d5a950.PNG" alt=""/>
-    <img src="img/footer_0bca93db-411f-4541-825a-4c3b5de36bf1.jpg" alt=""/>
+    <img src="img/hero_51f6ca4a-043f-4384-bf2d-0276833261fc.jpg" alt="" />
+    <img src="img/acustica_395abf3a-d46e-4f19-a9cc-ddee140e6597.jpg" alt="" />
 
 </body>
+
 </html>
